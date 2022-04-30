@@ -23,7 +23,7 @@ public class GithubTestListener {
       $(".header-search-input").pressEnter();
 
       $(linkText("Bokoff-Il/qa-guru-hw6")).click();
-      $(partialLinkText("Issues1")).click();
+      $(partialLinkText("Issues")).click();
       $(withText("#1")).click();
     }
 }
