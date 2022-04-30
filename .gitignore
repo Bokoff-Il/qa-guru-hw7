@@ -1,0 +1,23 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Properties files
+*.properties
+
+# Project gen files
+.idea
+.allure/
+allure-results/
+bin/
+out/
+logs/
+target/
+.project
+/gradlew
+/gradlew.bat
+# Project exclude paths
+/.gradle/
+/build/
