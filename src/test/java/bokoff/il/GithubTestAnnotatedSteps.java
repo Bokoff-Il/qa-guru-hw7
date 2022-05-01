@@ -18,7 +18,7 @@ public class GithubTestAnnotatedSteps {
       steps.searchRepository(REPOSITORY);
       steps.clickOnRepositoryLink(REPOSITORY);
       steps.openIssuesTab();
-      steps.shouldBeIssueWithNumber(ISSUE_NUMBER);
+      steps.checkIssueWithNumber(ISSUE_NUMBER);
     }
 }
 

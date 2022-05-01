@@ -39,7 +39,7 @@ public class GithubTestLambdaSteps {
       step("Жмем на Issues", () -> {
         $(partialLinkText("Issues")).click();
       });
-      step("Проверяем существование issue с номером " + ISSUE_NUMBER, () -> {
+      step("Проверяем имя issue с номером" + ISSUE_NUMBER, () -> {
         $("#issue_" + ISSUE_NUMBER + "_link").shouldBe(text("Test issue"));
       });
     }

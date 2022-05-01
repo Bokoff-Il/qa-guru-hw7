@@ -40,8 +40,8 @@ public class WebSteps {
     $(partialLinkText("Issues")).click();
   }
 
-  @Step("Проверяем существование issue с номером {number}")
-  public void shouldBeIssueWithNumber(String number){
+  @Step("Проверяем имя issue с номером {number}")
+  public void checkIssueWithNumber(String number){
     $("#issue_" + number + "_link").shouldBe(text("Test issue"));
     attachScreenshot();
   }
