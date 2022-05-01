@@ -1,5 +1,6 @@
 package bokoff.il;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -15,7 +16,7 @@ import org.junit.jupiter.api.Test;
 public class GithubTestLambdaSteps {
 
   private static final String REPOSITORY = "Bokoff-Il/qa-guru-hw6";
-  private static final String ISSUE_NUMBER = "#1";
+  private static final String ISSUE_NUMBER = "1";
 
     @Test
     public void testGithubIssue(){
@@ -39,7 +40,7 @@ public class GithubTestLambdaSteps {
         $(partialLinkText("Issues")).click();
       });
       step("Проверяем существование issue с номером " + ISSUE_NUMBER, () -> {
-        $(withText(ISSUE_NUMBER)).click();
+        $("#issue_" + ISSUE_NUMBER + "_link").shouldBe(text("Test issue"));
       });
     }
 }

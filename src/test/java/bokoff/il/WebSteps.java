@@ -1,5 +1,6 @@
 package bokoff.il;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -41,7 +42,7 @@ public class WebSteps {
 
   @Step("Проверяем существование issue с номером {number}")
   public void shouldBeIssueWithNumber(String number){
-    $(withText(number)).click();
+    $("#issue_" + number + "_link").shouldBe(text("Test issue"));
     attachScreenshot();
   }
 

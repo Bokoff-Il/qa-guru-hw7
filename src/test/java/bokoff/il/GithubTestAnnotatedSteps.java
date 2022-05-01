@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class GithubTestAnnotatedSteps {
 
   private static final String REPOSITORY = "Bokoff-Il/qa-guru-hw6";
-  private static final String ISSUE_NUMBER = "#1";
+  private static final String ISSUE_NUMBER = "1";
 
     @Test
     public void testGithubIssue(){
